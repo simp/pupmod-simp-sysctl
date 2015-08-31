@@ -7,5 +7,5 @@ define sysctl::set_value(
 ){
   sysctl::value { $name: value => $value }
 
-  notice("sysctl::set_value has been deprecated, please change all calls to sysctl::value")
+  notice('sysctl::set_value has been deprecated, please change all calls to sysctl::value')
 }

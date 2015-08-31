@@ -1,6 +1,10 @@
 ---
 fixtures:
+  repositories:
+    common: "git://github.com/simp/pupmod-simp-common"
+    stdlib: "git://github.com/simp/puppetlabs-stdlib"
+    augeasproviders : "git://github.com/simp/augeasproviders"
+    augeasproviders_core : "git://github.com/simp/augeasproviders_core"
+    augeasproviders_sysctl: "git://github.com/simp/augeasproviders_sysctl"
   symlinks:
     sysctl: "#{source_dir}"
-    common: "#{source_dir}/../common"
-    stdlib: "#{source_dir}/../stdlib"
