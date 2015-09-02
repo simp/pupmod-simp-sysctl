@@ -10,7 +10,7 @@
 #
 class sysctl {
 
-    file { '/etc/sysctl.conf':
+    file { '/etc/sysctl.d/20-simp.conf':
         ensure => 'present',
         owner  => 'root',
         group  => 'root',

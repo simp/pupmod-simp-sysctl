@@ -5,7 +5,7 @@ describe 'sysctl' do
   it { should create_class('sysctl') }
 
   it do
-    should contain_file('/etc/sysctl.conf').with({
+    should contain_file('/etc/sysctl.d/20-simp.conf').with({
       'ensure' => 'present',
       'owner' => 'root',
       'group' => 'root',

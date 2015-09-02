@@ -23,7 +23,7 @@ define sysctl::value(
       default => 'present'
     },
     val     => $value,
-    require => File['/etc/sysctl.conf']
+    require => File['/etc/sysctl.d/20-simp.conf']
   }
 
   if "$value" != 'nil' {

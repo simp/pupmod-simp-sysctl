@@ -10,7 +10,7 @@ describe 'sysctl::set_value' do
     should contain_sysctl('net.unix.max_dgram_qlen').with({
       'ensure' => 'present',
       'val' => '50',
-      'require' => 'File[/etc/sysctl.conf]'
+      'require' => 'File[/etc/sysctl.d/20-simp.conf]'
     })
   end
 
@@ -28,7 +28,7 @@ describe 'sysctl::set_value' do
       should contain_sysctl('net.unix.max_dgram_qlen').with({
         'ensure' => 'absent',
         'val' => 'nil',
-        'require' => 'File[/etc/sysctl.conf]'
+        'require' => 'File[/etc/sysctl.d/20-simp.conf]'
       })
     end
   end
