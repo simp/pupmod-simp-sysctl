@@ -3,4 +3,5 @@ fixtures:
   symlinks:
     sysctl: "#{source_dir}"
     common: "#{source_dir}/../common"
+    simplib: "#{source_dir}/../simplib"
     stdlib: "#{source_dir}/../stdlib"

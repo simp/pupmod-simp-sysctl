@@ -137,6 +137,6 @@ fi
 - Capabilites were included to ensure that existing double quoted values will
   continue to function properly.
 
-* Thu Nov 02 2009 Maintenance
+* Mon Nov 02 2009 Maintenance
 0.1-6
 - Simple change from require to subscribe.
