@@ -1,7 +1,7 @@
 Summary: Sysctl Puppet Module
 Name: pupmod-sysctl
 Version: 4.1.0
-Release: 5
+Release: 6
 License: Apache License, Version 2.0
 Group: Applications/System
 Source: %{name}-%{version}-%{release}.tar.gz
@@ -55,6 +55,9 @@ fi
 # Post uninstall stuff
 
 %changelog
+* Wed Feb 24 2016 Chris Tessmer <chris.tessmer@onyxpoint.com> - 4.1.0-6
+- Minor linting fixes
+
 * Wed Sep 2 2015 Nick Miller <nick.miller@onyxpoint.com> - 4.1.0-5
 - Moved the configuration file from /etc/sysctl.conf to /etc/sysctl.d/20-simp.conf
   to avoid conflict with packages.

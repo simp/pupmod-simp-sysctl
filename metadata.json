@@ -1,0 +1,33 @@
+{
+  "name":    "simp-sysctl",
+  "version": "4.1.0",
+  "author":  "simp",
+  "summary": "Manages sysctl",
+  "license": "Apache-2.0",
+  "source":  "https://github.com/simp/pupmod-simp-sysctl",
+  "project_page": "https://github.com/simp/pupmod-simp-sysctl",
+  "issues_url":   "https://simp-project.atlassian.net",
+  "tags": [ "simp", "sysctl" ],
+  "dependencies": [
+    {
+      "name": "herculesteam/augeasproviders",
+      "version_requirement": ">= 2.0.1"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ]
+}

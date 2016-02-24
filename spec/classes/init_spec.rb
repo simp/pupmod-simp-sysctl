@@ -2,10 +2,10 @@ require 'spec_helper'
 
 describe 'sysctl' do
 
-  it { should create_class('sysctl') }
+  it { is_expected.to create_class('sysctl') }
 
   it do
-    should contain_file('/etc/sysctl.d/').with({
+    is_expected.to contain_file('/etc/sysctl.d/').with({
       'ensure' => 'directory',
       'owner'  => 'root',
       'group'  => 'root',
@@ -14,7 +14,7 @@ describe 'sysctl' do
   end
 
   it do
-    should contain_file('/etc/sysctl.d/20-simp.conf').with({
+    is_expected.to contain_file('/etc/sysctl.d/20-simp.conf').with({
       'ensure'  => 'present',
       'owner'   => 'root',
       'group'   => 'root',

@@ -17,20 +17,22 @@ define sysctl::value(
 ){
   include 'sysctl'
 
+  validate_string($value)
+
+  $_ensure  = $value ? {
+    'nil'   => 'absent',
+    default => 'present'
+  }
+
   sysctl { $name:
-    ensure  => $value ? {
-      'nil'   => 'absent',
-      default => 'present'
-    },
+    ensure  => $_ensure,
     val     => $value,
     require => File['/etc/sysctl.d/20-simp.conf']
   }
 
-  if "$value" != 'nil' {
+  if $value != 'nil' {
     sysctl_set_value { $name:
       val => $value
     }
   }
-
-  validate_string($value)
 }
