@@ -11,7 +11,7 @@
 class sysctl {
 
   file { '/etc/sysctl.d/':
-    ensure => directory,
+    ensure => 'directory',
     owner  => 'root',
     group  => 'root',
     mode   => '0755'
@@ -21,7 +21,6 @@ class sysctl {
     ensure  => 'present',
     owner   => 'root',
     group   => 'root',
-    mode    => '0600',
-    require => File['/etc/sysctl.d/']
+    mode    => '0600'
   }
 }

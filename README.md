@@ -7,8 +7,11 @@ If you find any issues, they can be submitted to our [JIRA](https://simp-project
 
 Please read our [Contribution Guide](https://simp-project.atlassian.net/wiki/display/SD/Contributing+to+SIMP) and visit our [developer wiki](https://simp-project.atlassian.net/wiki/display/SD/SIMP+Development+Home).
 
-## Work in Progress
+## DEPRECATION NOTICE
 
-Please excuse us as we transition this code into the public domain.
+This module will be removed in the next Major release of SIMP and no longer
+supported.
 
-Downloads, discussion, and patches are still welcome!
+Please migrate to the augeasproviders_sysctl module as it now provides all
+necessary functionality.
+

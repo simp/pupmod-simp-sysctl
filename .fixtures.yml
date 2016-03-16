@@ -2,10 +2,17 @@
 fixtures:
   repositories:
     common: "git://github.com/simp/pupmod-simp-common"
-    simplib: "git://github.com/simp/pupmod-simp-simplib"
-    stdlib: "git://github.com/simp/puppetlabs-stdlib"
-    augeasproviders : "git://github.com/simp/augeasproviders"
-    augeasproviders_core : "git://github.com/simp/augeasproviders_core"
-    augeasproviders_sysctl: "git://github.com/simp/augeasproviders_sysctl"
+    stdlib:
+      repo : "git://github.com/simp/puppetlabs-stdlib"
+      branch : "simp-master"
+    augeasproviders :
+      repo : "git://github.com/simp/augeasproviders"
+      branch : "simp-master"
+    augeasproviders_core :
+      repo : "git://github.com/simp/augeasproviders_core"
+      branch : "simp-master"
+    augeasproviders_sysctl:
+      repo : "git://github.com/simp/augeasproviders_sysctl"
+      branch : "simp-master"
   symlinks:
     sysctl: "#{source_dir}"

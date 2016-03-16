@@ -1,22 +1,24 @@
-Summary: Sysctl Puppet Module
+Summary: Sysctl Puppet Module - Deprecated
 Name: pupmod-sysctl
-Version: 4.1.0
-Release: 6
+Version: 4.2.0
+Release: 0
 License: Apache License, Version 2.0
 Group: Applications/System
 Source: %{name}-%{version}-%{release}.tar.gz
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: puppet >= 3.3.0
 Buildarch: noarch
-Requires: pupmod-augeasproviders_sysctl >= 2.0.1
+Requires: pupmod-augeasproviders_sysctl >= 2.1.0
 Requires: simp-bootstrap >= 4.2.0
 Provides: pupmod-puppet-sysctl
 Obsoletes: pupmod-puppet-sysctl
 Obsoletes: pupmod-sysctl-test
 
-Prefix: /etc/puppet/environments/simp/modules
+Prefix: %{_sysconfdir}/puppet/environments/simp/modules
 
 %description
+NOTE: This module is deprecated. Please use augeasproviders_sysctl directly!
+
 This Puppet module is an extension of one of the modules from the reductivelabs
 web site that provides the ability to manage /etc/sysctl settings.
 
@@ -55,6 +57,10 @@ fi
 # Post uninstall stuff
 
 %changelog
+* Wed Mar 16 2016 Trevor Vaughan <tvaughan@onyxpoint.com> - 4.2.0-0
+- Added deprecation notice
+- Ported to using augeasproviders_sysctl natively on the backend
+
 * Wed Feb 24 2016 Chris Tessmer <chris.tessmer@onyxpoint.com> - 4.1.0-6
 - Minor linting fixes
 
