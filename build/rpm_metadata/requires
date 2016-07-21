@@ -1,0 +1,4 @@
+Requires: pupmod-herculesteam-augeasproviders_sysctl >= 2.1.0
+Provides: pupmod-puppet-sysctl
+Obsoletes: pupmod-puppet-sysctl >= 0.0.1
+Obsoletes: pupmod-sysctl-test >= 0.0.1
