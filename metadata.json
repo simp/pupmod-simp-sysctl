@@ -1,17 +1,20 @@
 {
-  "name":    "simp-sysctl",
+  "name": "simp-sysctl",
   "version": "4.2.0",
-  "author":  "simp",
+  "author": "simp",
   "summary": "Manages sysctl - Deprecated use augeasproviders_sysctl",
   "license": "Apache-2.0",
-  "source":  "https://github.com/simp/pupmod-simp-sysctl",
+  "source": "https://github.com/simp/pupmod-simp-sysctl",
   "project_page": "https://github.com/simp/pupmod-simp-sysctl",
-  "issues_url":   "https://simp-project.atlassian.net",
-  "tags": [ "simp", "sysctl" ],
+  "issues_url": "https://simp-project.atlassian.net",
+  "tags": [
+    "simp",
+    "sysctl"
+  ],
   "dependencies": [
     {
       "name": "herculesteam/augeasproviders_sysctl",
-      "version_requirement": ">= 2.1.0"
+      "version_requirement": ">= 2.1.0 < 3.0.0"
     }
   ],
   "operatingsystem_support": [
