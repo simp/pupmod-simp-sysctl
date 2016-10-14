@@ -1,17 +1,17 @@
 ---
 fixtures:
   repositories:
-    augeasproviders :
-      repo: "https://github.com/simp/augeasproviders"
-      branch: "simp-master"
-    augeasproviders_core :
-      repo: "https://github.com/simp/augeasproviders_core"
-      branch: "simp-master"
+    augeasproviders:
+      branch: 5.X
+      repo: https://github.com/simp/augeasproviders
+    augeasproviders_core:
+      branch: 5.X
+      repo: https://github.com/simp/augeasproviders_core
     augeasproviders_sysctl:
-      repo: "https://github.com/simp/augeasproviders_sysctl"
-      branch: "simp-master"
+      branch: 5.X
+      repo: https://github.com/simp/augeasproviders_sysctl
     stdlib:
-      repo: "https://github.com/simp/puppetlabs-stdlib"
-      branch: "simp-master"
+      branch: 5.X
+      repo: https://github.com/simp/puppetlabs-stdlib
   symlinks:
     sysctl: "#{source_dir}"
