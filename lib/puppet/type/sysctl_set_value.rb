@@ -20,7 +20,7 @@ module Puppet
 
     newproperty(:val) do
       desc "The value to which the item should be set"
-      
+
       def sync
         provider.activate_sysctl
       end
@@ -49,4 +49,4 @@ module Puppet
     end
 
   end
-end          
+end
