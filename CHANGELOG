@@ -1,3 +1,7 @@
+* Mon Nov 21 2016 Chris Tessmer <chris.tessmer@onyxpoint.com> - 4.2.2-0
+- Added deprecation notice
+- Ported to using augeasproviders_sysctl natively on the backend
+
 * Wed Mar 16 2016 Trevor Vaughan <tvaughan@onyxpoint.com> - 4.2.0-0
 - Added deprecation notice
 - Ported to using augeasproviders_sysctl natively on the backend
