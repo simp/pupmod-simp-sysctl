@@ -1,7 +1,7 @@
 {
   "name": "simp-sysctl",
   "version": "4.2.1",
-  "author": "simp",
+  "author": "SIMP Team",
   "summary": "Manages sysctl - Deprecated use augeasproviders_sysctl",
   "license": "Apache-2.0",
   "source": "https://github.com/simp/pupmod-simp-sysctl",

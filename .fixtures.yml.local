@@ -1,8 +1,0 @@
---- 
-  fixtures: 
-    symlinks: 
-      augeasproviders: "#{source_dir}/../augeasproviders"
-      augeasproviders_core: "#{source_dir}/../augeasproviders_core"
-      augeasproviders_sysctl: "#{source_dir}/../augeasproviders_sysctl"
-      stdlib: "#{source_dir}/../stdlib"
-      sysctl: "#{source_dir}"

@@ -1,6 +1,6 @@
 Puppet::Type.type(:sysctl_set_value).provide(:set_value) do
   desc "Provider for setting sysctl values on running systems."
-  
+
   commands :sysctl => '/sbin/sysctl'
 
   def activate_sysctl
