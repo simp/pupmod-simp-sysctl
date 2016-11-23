@@ -1,3 +1,6 @@
+* Tue Nov 22 2016 Jeanne Greulich <jgreulich@onyxpoint.com> - 5.0.0-0
+- Major version bump to 5.0 for SIMP 6
+
 * Mon Nov 21 2016 Chris Tessmer <chris.tessmer@onyxpoint.com> - 4.2.2-0
 - Added deprecation notice
 - Ported to using augeasproviders_sysctl natively on the backend

@@ -1,6 +1,6 @@
 {
   "name": "simp-sysctl",
-  "version": "4.2.2",
+  "version": "5.0.0",
   "author": "SIMP Team",
   "summary": "Manages sysctl - Deprecated use augeasproviders_sysctl",
   "license": "Apache-2.0",
