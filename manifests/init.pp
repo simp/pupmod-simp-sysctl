@@ -18,9 +18,9 @@ class sysctl {
   }
 
   file { '/etc/sysctl.d/20-simp.conf':
-    ensure  => 'present',
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0600'
+    ensure => 'present',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0600'
   }
 }
